@@ -1,0 +1,1 @@
+*/30 * * * * /bin/date >> /root/WEB1_Date`date +"%Y-%b-%d"`

@@ -1,0 +1,1 @@
+*/10 * * * * /bin/date >> /root/DB1_Date`date +"%Y-%b-%d"`

@@ -1,0 +1,1 @@
+*/30 * * * * /bin/date >> /root/phusion_Date`date +"%Y-%b-%d"`
