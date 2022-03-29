@@ -7,5 +7,5 @@ The Cron file path is changes as per the OS family. Also, make sure that the nam
 
 **
 NOTE: While creating Ansible Directory Structure, use below command
-# ansible-galaxy init <rolename>
+# ansible-galaxy init rolename
 **
