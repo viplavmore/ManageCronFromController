@@ -1,1 +1,12 @@
+---
+- name: Pushing Cron files to Debian Web Servers
+  copy: src=files/web dest=/var/spool/cron/crontabs/root
+  when: ansible_os_family == 'Debian' and ansible_hostname == "web1" or ansible_hostname == "web2"
 
+- name: Pushing Cron files to Debian DB Servers
+  copy: src=files/db dest=/var/spool/cron/crontabs/root
+  when: ansible_os_family == 'Debian' and ansible_hostname == "db1" or ansible_hostname == "db2"
+
+- name: Pushing Cron files to Redhat Servers
+  copy: src=files/{{ s_name }} dest=/var/spool/cron/root
+  when: ansible_os_family == 'RedHat'
